@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Baccarat Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>🎰 Insurance Baccarat Bot</h1>
+        <p class="subtitle">Análise inteligente + proteção no empate</p>
+    </header>
+
+    <section class="status analyzing" id="status">
+        🤔 ANALISANDO MERCADO...
+    </section>
+
+    <section class="controls">
+        <button onclick="addResult('P')">PLAYER</button>
+        <button onclick="addResult('B')">BANKER</button>
+        <button onclick="addResult('T')">EMPATE</button>
+    </section>
+
+    <section class="signal" id="signal"></section>
+
+    <section class="history">
+        <h3>📊 Histórico</h3>
+        <ul id="historyList"></ul>
+    </section>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
